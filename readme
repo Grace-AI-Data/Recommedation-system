@@ -10,7 +10,17 @@ All ratings are contained in the file "ratings.dat" and are in the following for
 - Timestamp is represented in seconds since the epoch as returned by time(2)
 - Each user has at least 20 ratings
 
-Recommedation system
-In this project, we will build a hybrid recommender. As with most things there's more than one way to do it. Perhaps we could reserve some slots on our top end results for certain recommenders, perhaps we use one recommender primarily with various fall backs to use in case the primary recommender cannot fill all of our top end slots or perhaps we generate rating predictions from many recommenders in parallel and add or average their scores together before ranking them. when estimate is called to generate a rating prediction for a specific user item pair, compute a weighted average based on each algorithm in the list and the weight associated with each. Then try it out and see how our hybrid algorithm performs compared to using its component algorithms individually. Which recommenders we choose to combine is up to we. I chose to combine our RBM algorithm with the content-based KNN algorithm in the spirit of combining behavior based and semantic based information together in a single system. 
+
+In this project, we will build a hybrid recommender. 
+As with most things there's more than one way to do it. 
+Perhaps we could reserve some slots on our top end results for certain recommenders, 
+perhaps we use one recommender primarily with various fall backs to use in case the primary recommender 
+cannot fill all of our top end slots or perhaps we generate rating predictions from many recommenders 
+in parallel and add or average their scores together before ranking them. when estimate is called to 
+generate a rating prediction for a specific user item pair, compute a weighted average based on 
+each algorithm in the list and the weight associated with each. Then try it out and see how our 
+hybrid algorithm performs compared to using its component algorithms individually. Which recommenders we 
+choose to combine is up to we. I chose to combine our RBM algorithm with the content-based KNN algorithm 
+in the spirit of combining behavior based and semantic based information together in a single system. 
 
 
